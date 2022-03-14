@@ -20,10 +20,10 @@ def load_models():
 
 @app.route("/")
 def hello():
+    """ 
+    Ping the API. 
     """
-    Ping the API.
-    """
-    return jsonify({"text":"Hello, the API is up and running..." })
+    return jsonify({"Statut:API>>>ON"  :  "Bonjour , l'API est operationelle !!!  Cette Api est concuegit add . par Hamadi zarrouk dans le cadre du projet 7 du parcours  Data-Science d'Openclassrooms" })
 
 @app.route('/predict', methods=['POST'])
 def predict():
